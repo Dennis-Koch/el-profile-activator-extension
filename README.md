@@ -41,3 +41,8 @@ A few examples (an MVEL cheatsheet)
 		isdef foo &amp;&amp; foo.startsWith("abc")) || (isdef baz &amp;&amp; baz.contains("xyz"))
 
 Complete MVEL reference guide is available at http://mvel.codehaus.org/Language+Guide+for+2.0		
+
+
+In order to deploy artifacts locally take this as a blueprint:
+	
+	mvn deploy:deploy-file -DgroupId=com.redhat.jboss.maven -DartifactId=el-profile-activator-extension -Dversion=1.0.0 -Dpackaging=jar -Dfile=<pathToJar> -Durl=<url> -DrepositoryId=<serverId>
