@@ -1,4 +1,7 @@
+*.jar
+.git-versioned-pom.xml
 .settings
 .classpath
+.idea
 .project
 target
